@@ -120,8 +120,7 @@ h1 {
 
 .project-description {
    font-size: 1.15em;
-   font-family: "Patrick Hand", cursive;
-   margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif margin: 0;
    transition: color 0.3s ease;
    /* Smooth transition for color change */
 }
