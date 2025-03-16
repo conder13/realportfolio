@@ -126,29 +126,32 @@ h1 {
    transform: translateY(0);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 1024px) {
+/* Mobile (Force 1 per row, full width) */
+@media only screen and (max-width: 600px) {
    .projects-container {
-      grid-template-columns: repeat(2, 1fr);
-      /* 2 per row on tablets */
-   }
-}
-
-@media (max-width: 768px) {
-   .projects-container {
-      grid-template-columns: 1fr;
-      /* 1 per row on mobile */
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      padding: 10px !important;
+      /* Ensure some space on edges */
    }
 
    .project-box {
-      width: 100%;
+      width: 90% !important;
+      /* Take up almost full screen width */
+      max-width: 500px !important;
+      /* Set max width for better spacing */
+      height: auto !important;
+      /* Allow flexible height */
    }
 
    h1 {
-      font-size: 12vw;
+      font-size: 50vw !important;
+      /* Adjust for mobile */
    }
 
    .logo {
-      width: 15vw;
+      width: 30vw !important;
+      /* Adjust logo size */
    }
 }
